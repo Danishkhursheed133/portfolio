@@ -1,0 +1,221 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #663d3d;
+    color: #e2e8f0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #020617;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Container */
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* Nav layout */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Menu links (ONE LINE) */
+.menu-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+/* Menu link style */
+.menu-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-links a:hover {
+    color: #38bdf8;
+}
+
+/* Social buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Button style */
+.btn-social {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #1e293b;
+    color: #e2e8f0;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-social:hover {
+    background: linear-gradient(45deg, #38bdf8, #22c55e);
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Hamburger */
+.menu-toggle {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #e2e8f0;
+}
+
+/* ================= PROFILE ================= */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid #38bdf8;
+    object-fit: cover;
+}
+
+/* ================= MAIN CONTENT ================= */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #22c55e;
+}
+
+/* Paragraph */
+p {
+    margin-bottom: 10px;
+}
+
+/* Skills */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #1e293b;
+    margin: 5px auto;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* Project card */
+.card {
+    background: #1e293b;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #38bdf8;
+    color: #000;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #22c55e;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        background: #020617;
+        padding: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
