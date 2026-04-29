@@ -1,1 +1,276 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* ================= BODY ================= */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #2f4944;
+    color: #e2e8f0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: rgba(134, 130, 169, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Menu */
+.menu-links {
+    display: flex;
+    gap: 25px;
+}
+
+/* Nav links */
+.menu-links a {
+    position: relative;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Underline animation */
+.menu-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: linear-gradient(45deg, #38bdf8, #22c55e);
+    transition: 0.3s;
+}
+
+.menu-links a:hover::after {
+    width: 100%;
+}
+
+/* ================= HAMBURGER ================= */
+.menu-toggle {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* ================= MOBILE NAV ================= */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+/* ================= PROFILE ================= */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid #38bdf8;
+    object-fit: cover;
+}
+
+/* ================= MAIN ================= */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #22c55e;
+}
+
+/* Text */
+p {
+    margin-bottom: 10px;
+}
+
+/* Skills */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #1e293b;
+    margin: 5px auto;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+    scroll-margin-top: 80px;
+}
+
+/* Projects */
+.card {
+    background: #1e293b;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background: #38bdf8;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #22c55e;
+}
+
+/* Links */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #22c55e;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Base */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #1e293b;
+    color: #e2e8f0;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Hover */
+.social-links a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* GitHub */
+.social-links a:nth-child(1):hover {
+    background: #ffffff;
+    color: #000;
+}
+
+/* LinkedIn */
+.social-links a:nth-child(2):hover {
+    background: #0077b5;
+    color: #fff;
+}
+
+/* Instagram */
+.social-links a:nth-child(3):hover {
+    background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+    color: #fff;
+}
+
+/* Gmail */
+.social-links a:nth-child(4):hover {
+    background: #ea4335;
+    color: #fff;
+}
+
+/* WhatsApp */
+.social-links a:nth-child(5):hover {
+    background: #25D366;
+    color: #fff;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* ================= MOBILE EXTRA ================= */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
