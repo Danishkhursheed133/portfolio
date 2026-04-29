@@ -255,6 +255,40 @@ a:hover {
     color: #fff;
 }
 
+/* 📱 Show original colors on mobile */
+@media (max-width: 768px) {
+
+    /* GitHub */
+    .social-links a:nth-child(1) {
+        background: #ffffff;
+        color: #000;
+    }
+
+    /* LinkedIn */
+    .social-links a:nth-child(2) {
+        background: #0077b5;
+        color: #fff;
+    }
+
+    /* Instagram */
+    .social-links a:nth-child(3) {
+        background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+        color: #fff;
+    }
+
+    /* Gmail */
+    .social-links a:nth-child(4) {
+        background: #ea4335;
+        color: #fff;
+    }
+
+    /* WhatsApp */
+    .social-links a:nth-child(5) {
+        background: #25D366;
+        color: #fff;
+    }
+}
+
 /* ================= FOOTER ================= */
 footer {
     margin-top: 40px;
