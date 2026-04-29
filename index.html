@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+html {
+    scroll-behavior: smooth;
+}
+</style>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <h2 class="logo">My Portfolio</h2>
+
+        <!-- Hamburger -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <!-- Menu -->
+        <div class="nav-links" id="nav-links">
+
+            <div class="menu-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#profile">Profile</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<div class="container">
+    <!--profile -->
+    <section id="profile">
+    
+    <img src="profile.jpg" alt="My Photo" class="profile-img">
+
+    <h1>Danish Khursheed</h1>
+        <p>Web Developer</p>
+        </section>
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate beginner web developer with a strong interest in building modern and responsive websites.
+            I have started my journey with HTML and CSS and I am currently learning JavaScript to create interactive web applications.
+            I enjoy solving problems, exploring new technologies, and improving my skills every day.
+            My goal is to become a professional full-stack developer and work on real-world projects.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (learning)</li>
+        </ul>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <p>Project 1 - Coming soon</p>
+        </div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+        <section id="contact">
+    <h2>Contact</h2>
+    
+
+
+    <!-- 🔥 SOCIAL ICONS HERE -->
+    <div class="social-links">
+        <a href="https://github.com/Danishkhursheed133" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/your-username" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://instagram.com/d4nish_khursheed_18" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="mailto:danishrather041@email.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://whatsapp.com/+91-7051713047" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</section>
+
+
+</div>
+
+<!-- ================= JS ================= -->
+<script>
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav-links");
+
+toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
