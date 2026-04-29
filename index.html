@@ -3,6 +3,7 @@
 <head>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    
     <style>
 html {
     scroll-behavior: smooth;
@@ -10,6 +11,7 @@ html {
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,14 +43,21 @@ html {
 
 <!-- ================= MAIN CONTENT ================= -->
 <div class="container">
-    <!--profile -->
-    <section id="profile">
     
-    <img src="profile.jpg" alt="My Photo" class="profile-img">
+
+    <!-- ================= HERO ================= -->
+<section class="hero" id="profile">
+    <img src="profile.jpg" class="profile-img">
 
     <h1>Danish Khursheed</h1>
-        <p>Web Developer</p>
-        </section>
+<h3 id="typing"></h3>
+    <p>I build modern and responsive websites 🚀</p>
+
+    <div class="hero-buttons">
+        <a href="#contact" class="btn">Hire Me</a>
+    </div>
+</section>
+
     <!-- ABOUT -->
     <section id="about">
         <h2>About Me</h2>
@@ -79,7 +88,7 @@ html {
         </div>
     </section>
 
-
+    
 
     <!-- CONTACT -->
 
@@ -122,6 +131,12 @@ const nav = document.getElementById("nav-links");
 toggle.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
 </script>
 
 </body>
