@@ -289,6 +289,12 @@ a:hover {
     }
 }
 
+.social-links a:nth-child(1) { background:#fff; color:#000; }
+.social-links a:nth-child(2) { background:#0077b5; color:#fff; }
+.social-links a:nth-child(3) { background:linear-gradient(45deg,#f09433,#dc2743,#bc1888); }
+.social-links a:nth-child(4) { background:#ea4335; }
+.social-links a:nth-child(5) { background:#25D366; }
+
 /* ================= FOOTER ================= */
 footer {
     margin-top: 40px;
