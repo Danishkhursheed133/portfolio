@@ -120,6 +120,14 @@ p {
     transition: 0.3s;
 }
 
+.hero-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 .btn:hover {
     background: linear-gradient(45deg, #38bdf8, #6366f1);
     color: #000;
