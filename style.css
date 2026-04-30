@@ -240,3 +240,24 @@ footer {
         height: 120px;
     }
 }
+
+/* Glow effect */
+.social-links a:hover,
+.btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
+}
+
+.menu-links a.active {
+    color: #22c55e;
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #38bdf8, #22c55e);
+    width: 0%;
+    z-index: 9999;
+}
