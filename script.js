@@ -35,6 +35,35 @@ function type() {
     }
 
     setTimeout(type, 100);
+
+    window.addEventListener("scroll", () => {
+    let scrollTop = document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (scrollTop / height) * 100;
+
+    document.getElementById("progress-bar").style.width = scrolled + "%";
+});
+
+    const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".menu-links a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
 }
 
 type();
