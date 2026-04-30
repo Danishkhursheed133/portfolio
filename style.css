@@ -124,8 +124,15 @@ p {
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+    gap: 12px;
+    flex-wrap: wrap; /* 🔥 allows wrapping on small screens */
+}
+
+/* Fix buttons size */
+.hero-buttons .btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    white-space: nowrap; /* 🔥 prevents breaking text */
 }
 
 .btn:hover {
@@ -268,4 +275,17 @@ footer {
     background: linear-gradient(90deg, #38bdf8, #22c55e);
     width: 0%;
     z-index: 9999;
+}
+
+@media (max-width: 768px) {
+
+    .hero-buttons {
+        flex-direction: column; /* 🔥 stack buttons */
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 80%; /* 🔥 full width look */
+        text-align: center;
+    }
 }
